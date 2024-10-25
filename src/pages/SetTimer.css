@@ -1,0 +1,111 @@
+.set-timer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: calc(100% - 50px);
+  padding: 20px;
+}
+
+.time-setting {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 200px auto;
+}
+
+.time-button {
+  margin: 5px;
+  padding: 0 5px;
+  font-size: 30px;
+  border: none;
+  color: #d0e7d2;
+  background-color: transparent;
+}
+
+.minutes {
+  font-size: 30px;
+  align-self: center;
+}
+
+.checkbox-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 auto 20px;
+}
+
+label,
+input {
+  align-self: flex-start;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+  background-color: #d0e7d2;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+.label {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.checkbox {
+  display: none;
+}
+
+.new-checkbox {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  border-radius: 5px;
+  transition: 250ms;
+  border: 1px solid #d0e7d2;
+}
+
+.new-checkbox::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 5px;
+  border-left: 2px solid #36494e;
+  border-bottom: 2px solid #36494e;
+  transform: rotate(-45deg) translate(-50%, -50%);
+  top: 2px;
+  left: 10px;
+}
+
+.checkbox:checked + .new-checkbox::before {
+  border-color: #d0e7d2;
+}
+
+.checkbox:disabled + .new-checkbox {
+  background-color: #36494e;
+  border-color: gray;
+}
+
+.checkbox:disabled + .new-checkbox::before {
+  border-color: #36494e;
+}
+
+.start-button {
+  background-color: #36494e;
+  border: solid 1px #d0e7d2;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 10px;
+  color: inherit;
+  text-transform: uppercase;
+  width: 65%;
+  transition: 0.2s all;
+}

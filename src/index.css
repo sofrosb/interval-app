@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  max-width: 375px;
+  max-height: 667px;
+  overflow: hidden;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-container {
+  width: 375px;
+  height: 667px;
+  background-color: #36494e;
+  color: #d0e7d2;
+  font-family: "Raleway", sans-serif;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(100% - 50px);
+  margin-top: 10px;
+}
+
+.timer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.digital-time,
+.text-time {
+  text-align: center;
+  font-size: 2rem;
+  margin-left: 10px;
+  text-shadow: 1px 1px 1px black;
+}
+
+.text-time {
+  padding: 10px;
+}
+
+h1 {
+  font-size: 2rem;
+  text-shadow: 1px 1px 1px black;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+.abort-button {
+  background-color: #36494e;
+  border: solid 1px #d0e7d2;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 10px 15px;
+  color: #d0e7d2;
+  text-transform: uppercase;
+  margin-top: 40px;
+  z-index: 99;
+}
